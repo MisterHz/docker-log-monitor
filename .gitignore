@@ -1,0 +1,40 @@
+# ─── Secrets ─────────────────────────────────────────
+.env
+*.pem
+*.key
+ec2-key.pem
+
+# ─── Local planning artifacts (DO NOT COMMIT) ────────
+BUILD_PLAN.md
+INTERVIEW_PREP.md
+ADR_DRAFTS.md
+LEARNING_NOTES.md
+TODO.md
+
+# ─── Generated configs ───────────────────────────────
+alertmanager/config.yml
+
+# ─── Logs ────────────────────────────────────────────
+app/logs/*.log
+*.log
+data/
+
+# ─── IDE ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── OS ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Node (demo app) ─────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Misc ────────────────────────────────────────────
+*.bak
+*.tmp
