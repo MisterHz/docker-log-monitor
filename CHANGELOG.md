@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial project scaffolding (LICENSE, README skeleton, CHANGELOG, .gitignore)
 - GitHub issue templates and PR template
 - Loki single-binary service with filesystem storage (`docker-compose.yml`, `loki/loki-config.yml`)
+- Promtail shipping Docker container stdout/stderr to Loki via Docker service discovery (`promtail/config.yml`)
 
 ---
 
