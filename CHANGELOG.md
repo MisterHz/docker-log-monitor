@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial project scaffolding (LICENSE, README skeleton, CHANGELOG, .gitignore)
 - GitHub issue templates and PR template
+- Loki single-binary service with filesystem storage (`docker-compose.yml`, `loki/loki-config.yml`)
 
 ---
 
