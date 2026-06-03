@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+---
+
+## [v0.1] - 2026-06-03
+
+End-to-end log pipeline on a single host: containers log to stdout, Promtail ships
+them to Loki, and Grafana queries them — all from one `docker compose up`.
+
 ### Added
 - Initial project scaffolding (LICENSE, README skeleton, CHANGELOG, .gitignore)
 - GitHub issue templates and PR template
