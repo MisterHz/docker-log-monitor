@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub issue templates and PR template
 - Loki single-binary service with filesystem storage (`docker-compose.yml`, `loki/loki-config.yml`)
 - Promtail shipping Docker container stdout/stderr to Loki via Docker service discovery (`promtail/config.yml`)
+- Grafana with auto-provisioned Loki datasource using an env-driven URL (`grafana/provisioning/`)
 
 ---
 
