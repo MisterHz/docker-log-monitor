@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Grafana with auto-provisioned Loki datasource using an env-driven URL (`grafana/provisioning/`)
 - Demo Python/Flask app emitting structured JSON logs (INFO/WARN/ERROR) with simulated error/slow/random endpoints (`app/`)
 - README: Quick Start, architecture diagram, configuration, and project goals
+- ADR-001 documenting the choice of Loki over the ELK/EFK stack (`docs/adr/`)
 
 ---
 
