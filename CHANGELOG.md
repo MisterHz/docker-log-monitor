@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Promtail shipping Docker container stdout/stderr to Loki via Docker service discovery (`promtail/config.yml`)
 - Grafana with auto-provisioned Loki datasource using an env-driven URL (`grafana/provisioning/`)
 - Demo Python/Flask app emitting structured JSON logs (INFO/WARN/ERROR) with simulated error/slow/random endpoints (`app/`)
+- README: Quick Start, architecture diagram, configuration, and project goals
 
 ---
 
