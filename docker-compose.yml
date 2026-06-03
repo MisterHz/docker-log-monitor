@@ -2,6 +2,15 @@
 # v0.1 happy path: Loki, Promtail, Grafana and a demo app on a single host.
 
 services:
+  app:
+    build: ./app
+    container_name: demo-app
+    ports:
+      - "8080:8080"
+    environment:
+      SERVICE_NAME: demo-app
+    restart: unless-stopped
+
   loki:
     image: grafana/loki:3.4.2
     container_name: loki
