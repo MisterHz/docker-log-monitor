@@ -1,6 +1,5 @@
 # docker-log-monitor — observability stack.
 # v0.1 happy path: Loki, Promtail, Grafana and a demo app on a single host.
-# This commit adds Loki only; later commits append the rest of the pipeline.
 
 services:
   loki:
@@ -14,5 +13,18 @@ services:
       - loki-data:/loki
     restart: unless-stopped
 
+  promtail:
+    image: grafana/promtail:3.4.2
+    container_name: promtail
+    command: -config.file=/etc/promtail/config.yml
+    volumes:
+      - ./promtail/config.yml:/etc/promtail/config.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - promtail-data:/promtail
+    depends_on:
+      - loki
+    restart: unless-stopped
+
 volumes:
   loki-data:
+  promtail-data:
